@@ -98,30 +98,18 @@ public class UserController {
 	public String index(ShelterVO vo, Model model) {
 		
 		System.out.println("index 통과===================");
-		
-<<<<<<< HEAD
-		
-=======
 		//!참고 : list가져오는것은 조건이 따로 필요없어서 vo를 매개변수로 넣지않아도 해당 list를 DB에서 뽑아올 수 있습니다!
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 		List<ShelterVO> shelter = shelterMapper.getShelterList(vo);
 		System.out.println("index - shelter에 담긴값 출력===========" + shelter);
 		
 		List<HashMap<String,Object>> latelyShelterBoardListForMain = boardService.getLatelyBoardListForShelterBoardMain();
 		
-<<<<<<< HEAD
-		System.out.println("index의 getShelterSeq값 =============" + vo.getShelterSeq());
-		
-		 model.addAttribute("shelter", shelterMapper.getShelterList(vo));
-=======
 		//** VO에 담긴 값이 없으므로 의미 없는 코드임
 //		System.out.println("index의 getShelterSeq값 =============" + vo.getShelterSeq());
 		
 		//103번라인에서 똑같은 코드를 shelter 변수에 저장했기때문에 shelter 변수를 사용하겠습니다.
 //		 model.addAttribute("shelter", shelterMapper.getShelterList(vo));
 		 model.addAttribute("shelter", shelter);
-		
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 		 model.addAttribute("shelterPic", latelyShelterBoardListForMain);
 		 
 		 System.out.println("shelterPic==========" + latelyShelterBoardListForMain);
@@ -129,12 +117,6 @@ public class UserController {
 		
 		return "index2";
 	}
-	
-<<<<<<< HEAD
-=======
-
-	
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 
 	//회사 소개페이지로 이동
 	@GetMapping("/about")
@@ -608,10 +590,7 @@ public class UserController {
 			}
 		}
 		
-<<<<<<< HEAD
-=======
 
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 		   //   프로필 삭제 메서드
 	      @RequestMapping("/mypage/deleteProfile")
 	      public String deleteProfile(int userSeq, String userType, String userId) throws IOException {

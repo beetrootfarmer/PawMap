@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
-<<<<<<< HEAD
+
 import javax.websocket.server.PathParam;
-=======
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,19 +18,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-<<<<<<< HEAD
+
 import org.springframework.web.bind.annotation.ResponseBody;
-=======
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+
+
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.pawmap.VO.FileVO;
 import com.pawmap.VO.ShelterVO;
 import com.pawmap.mapper.ShelterMapper;
-<<<<<<< HEAD
-=======
+
 import com.pawmap.service.BoardService;
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+
 import com.pawmap.service.FileService;
 import com.pawmap.service.ShelterService;
 import com.pawmap.util.FileUtils;
@@ -48,12 +46,10 @@ public class ShelterController {
 	@Autowired
 	private FileService fileService;
 	
-<<<<<<< HEAD
-=======
 	@Autowired
 	private BoardService boardService;
 	
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+
 	
 	// 관리자페이지 -> 보호소 관리 페이지로 이동
 	@RequestMapping("/admin/shelterList")
@@ -131,14 +127,10 @@ public class ShelterController {
 		List<FileVO> fileList = fileUtils.parseFileInfo(shelterSeq, request, mhsr, "admin");
 		System.out.println("file타는감 ============" + fileList);
 		
-<<<<<<< HEAD
-			fileService.insertShelterFileList(fileList);
-=======
 		//사진 없을때 안넣도록 추가
 		if(fileList!=null) {
 			fileService.insertShelterFileList(fileList);
 		}
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 
 	
 
@@ -241,21 +233,6 @@ public class ShelterController {
 //		
 //	}
 	
-<<<<<<< HEAD
-	@GetMapping("/getShelterByJson")
-	@ResponseBody
-	public Map<String,Object> getShelterByJson(@PathParam("search_value")String value, Model model) {
-		
-		System.out.println("받은 데이터 == "+ value);
-		
-		List<ShelterVO> shelterList= shelterService.getShelterList(null);
-		Map<String, Object> shelterMap = new HashMap<>();
-				
-		shelterMap.put("shelterList", shelterList);	
-		
-		return shelterMap;
-	}
-=======
 	
 //	// 쉘터 디테일 페이지로 이동
 //	@RequestMapping("/shelterDetail")
@@ -323,16 +300,20 @@ public class ShelterController {
 		
 		return "shelter-detail";
 	}
+		
+	@GetMapping("/getShelterByJson")
+	@ResponseBody
+	public Map<String,Object> getShelterByJson(@PathParam("search_value")String value, Model model) {
+			
+			System.out.println("받은 데이터 == "+ value);
+			
+			List<ShelterVO> shelterList= shelterService.getShelterList(null);
+			Map<String, Object> shelterMap = new HashMap<>();
+					
+			shelterMap.put("shelterList", shelterList);	
+			
+			return shelterMap;
 
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 }

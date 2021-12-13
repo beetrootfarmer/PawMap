@@ -6,10 +6,9 @@ import java.util.Map;
 import org.springframework.stereotype.Component;
 
 import com.pawmap.VO.ShelterVO;
-<<<<<<< HEAD
+
 import com.pawmap.VO.UserVO;
-=======
->>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+
 
 @Component
 public interface ShelterService {

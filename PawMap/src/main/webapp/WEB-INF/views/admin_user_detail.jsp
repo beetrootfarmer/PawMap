@@ -32,7 +32,7 @@ pageEncoding="UTF-8"%>
 					<table class="u_join-table" style="margin-left: auto; margin-right: auto; text-align: center; border-top: none; border-bottom:none;">
 					<tr>
 						<td>ID:</td>
-						<td><input id="userID" type="text" name="userId" value="${user.userId }" read></td>
+						<td><input id="userID" type="text" name="userId" value="${user.userId }" readonly></td>
 					</tr>				
 					<tr>
 						<td>이름: </td>
