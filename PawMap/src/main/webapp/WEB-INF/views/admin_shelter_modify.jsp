@@ -2,6 +2,7 @@
 pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+<<<<<<< HEAD
 <%@ include file="layout/admin_header.jsp" %>
   <!--adminmainvetmanagement-->
 <!--관리자가 회원정보 수정 페이지 시작...-->
@@ -19,6 +20,105 @@ pageEncoding="UTF-8"%>
   <div id="adminusermanage" class="adminpagetablediv">
     <form name="updateForm" action="/pawmap/admin/updateShelterForm/api" method="POST"></form>
     <table class="u_join-table" style="margin-left: auto; margin-right: auto; text-align: center; border-top: none; border-bottom:none;">
+=======
+<%@ include file="layout/header.jsp" %>
+
+<!DOCTYPE html>
+<html lang="kor">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>adminpageassociatedvetcentermanagement</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!--Thomas lee started working on this page since nov 16th-->
+    <div class="main-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="our-link" style="float:right;">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+              </ul>
+            </div>
+            <div class="our-link" style="float:right">
+              <ul class="offer-box">
+                <!--thomas's comment: 상기 offer-box 태그로 인해 하기 li 태그들은 Border-right에 하얀 선이 나왔고 해당 사유로 하기 태그들은 스타일을 없앴음.-->
+                <li style="border-right:none; font-size:14px;">관리자페이지 입니다.</li>
+                <li style="border-right:none; font-size:14px;">Admin Page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- admin페이지의 header 시작...-->
+  <header class="main-header">
+    <!-- Start Navigation --> <!--하기 navbar navbar-expand-lg를 md로 교체-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+                <a class="navbar-brand" href="index.html"><img src="images/pawmaplogo.png" class="logo" alt="" width="216" height="118"></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href="adminpage2vetmange-tom.html"> 제휴병원 관리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adminpage4usermanage-tom.html"> 회원정보 관리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adminpage6sheltermanage-tom.html"> 보호소정보 관리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adminpage9communitymanage-tom.html"> 커뮤니티 게시판 관리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adminpage11counseloneonone-tom.html"> 1:1 상담 관리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adminpage13donationmanage-tom.html"> 후원금 관리</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- End Navigation --> <!--관리자 페이지 공통 부분 완료...-->
+  </header>
+  <!--adminmainvetmanagement-->
+    <div> 
+        <h1 style="text-align: center; font-size:30px; margin-top:5%;">보호소정보 수정</h1>
+    </div>
+    <div style="margin-top: 40px; border-style: 3px solid orange ">
+      <table style="margin-left: auto; margin-right: auto; text-align: center;">
+        <form name="updateForm" action="/pawmap/admin/updateShelterForm/api" method="POST">
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
           <input type="hidden" name="shelterSeq" value="${getShelter.shelterSeq}">
         <tr>
             <td>사업자등록번호 </td>
@@ -65,7 +165,11 @@ pageEncoding="UTF-8"%>
                                                     </div>  
                                                     현재 첨부된 파일 : 없음
                                                     <div class="entry input-group upload-input-group">  
+<<<<<<< HEAD
                                                     <button type="submit" class="btn btn-outline-primary btn-sm fileBtn adminpagebuttonformanage">파일 등록</button>
+=======
+                                                    <button type="submit" class="btn btn-outline-primary btn-sm fileBtn">파일 등록</button>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                                                 <!-- </div>  
                                             </div>  
                                         </div>  
@@ -173,12 +277,20 @@ pageEncoding="UTF-8"%>
         </td
       </tr>-->
       <tr>
+<<<<<<< HEAD
         <td rowspan="2"><button class="adminpagebuttonformanage"><span id="submitBtn"  class="btn btn-complete">제출</button></td>
       </tr>
 </table>
 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 </div>
 </div>
+=======
+        <td rowspan="2"><span id="submitBtn"  class="btn btn-complete">제출</button></td>
+      </tr>
+</table>
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 
 
 
@@ -285,6 +397,13 @@ pageEncoding="UTF-8"%>
 		});
 	}
 } -->
+<<<<<<< HEAD
 <!--    </script>
 -->
 <%@ include file="layout/admin_footer.jsp" %>
+=======
+    </script>
+
+<%@ include file="layout/footer.jsp" %>
+</html>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7

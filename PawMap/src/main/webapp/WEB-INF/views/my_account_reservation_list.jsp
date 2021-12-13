@@ -42,6 +42,7 @@ pageEncoding="UTF-8"%>
     </header>
     <!-- End Main Top -->
 
+<<<<<<< HEAD
     <div>
         <div class="container">
             <div class="row">
@@ -61,6 +62,13 @@ pageEncoding="UTF-8"%>
                 <h2>로그인 유저 닉네임 ${principal.user.userNickname}</h2>
                 <h3>조인으로 가져온 정보 ${myResList}</h3> -->
             </div>
+=======
+
+    
+    <div class="board-type  mt-5" style="padding-top: 150px;">
+        <h1 style="margin-bottom:0;"> 예약조회 </h1>
+        <p style="line-height: 2;">
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
             <br>
             1. 예약한 병원과 날짜, 시간을 확인하실수 있습니다.
             <br>
@@ -101,18 +109,18 @@ pageEncoding="UTF-8"%>
             <td>${myResList.schedule_time}</td>
             <c:choose>
                 <c:when test="${empty myResList.reservation_status }">
-                    <td style="color: gray;"><button type="button" onclick='location.href="/pawmap/showMyMedicalRecord?comNum=${myResList.com_num}&reservationDate=${myResList.reservation_date}&scheduleTime=${myResList.schedule_time}&userId=${principal.user.userId}"' disabled>진단서 보기</button></td>
+                    <td style="color: gray;"><button class="btnHos2" type="button" onclick='location.href="/pawmap/showMyMedicalRecord?comNum=${myResList.com_num}&reservationDate=${myResList.reservation_date}&scheduleTime=${myResList.schedule_time}&userId=${principal.user.userId}"' disabled>진단서 보기</button></td>
                 </c:when>
                 <c:otherwise>
-                    <td style="color: gray;"><button type="button" onclick='location.href="/pawmap/showMyMedicalRecord?comNum=${myResList.com_num}&reservationDate=${myResList.reservation_date}&scheduleTime=${myResList.schedule_time}&userId=${principal.user.userId}"'>진단서 보기</button></td>
+                    <td style="color: gray;"><button class="btnHos" type="button" onclick='location.href="/pawmap/showMyMedicalRecord?comNum=${myResList.com_num}&reservationDate=${myResList.reservation_date}&scheduleTime=${myResList.schedule_time}&userId=${principal.user.userId}"'>진단서 보기</button></td>
                 </c:otherwise>
             </c:choose>
             <c:choose>
                 <c:when test="${myResList.reservation_date <= sysYear || !empty myResList.reservation_status}">
-                    <td><button disabled>예약취소</button></td>
+                    <td><button class="btncan2 " disabled>예약취소</button></td>
                 </c:when>
                 <c:otherwise>
-                    <td><button  onclick="if(!confirm('정말 취소하겠씁니까?')){return false}" >예약취소</button></td>
+                    <td><button class="btncan" onclick="if(!confirm('정말 취소하겠씁니까?')){return false}" >예약취소</button></td>
                 </c:otherwise>
             </c:choose>
         </tr>

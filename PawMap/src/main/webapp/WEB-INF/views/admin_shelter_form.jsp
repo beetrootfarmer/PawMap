@@ -103,6 +103,12 @@ pageEncoding="UTF-8"%>
     <form class="form-horizontal board-form" method="POST" action="insertShelterForm" enctype="multipart/form-data">
       <div style="margin-top: 40px; border-style: 3px solid orange ">
         <table style="margin-left: auto; margin-right: auto; text-align: center;">
+<<<<<<< HEAD
+=======
+          
+          
+
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
           <tr>
             <td>사업자등록번호: </td>
             <td></td>

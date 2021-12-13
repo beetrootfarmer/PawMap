@@ -137,6 +137,7 @@ pageEncoding="UTF-8"%> <%@ include file="layout/header.jsp" %>
           </c:choose>
           <hr class="mb-4" />
           <div class="mb-4">
+<<<<<<< HEAD
             <button class="btn" id="upbtn" type="submit" 
                   style="width: 30%;  position:  relative; float: left; background: rgb(239, 199, 120,1) !important;
                   border: solid rgb(239, 199, 120,1) !important;  margin: 5px;"
@@ -147,20 +148,39 @@ pageEncoding="UTF-8"%> <%@ include file="layout/header.jsp" %>
               onclick="history.go(-1);return false;"
               style="width: 30%; position:  relative; float: left; background: rgb(239, 199, 120,1) !important;
               border: solid rgb(239, 199, 120,1) !important;  margin: 5px;"
+=======
+            <button class="btn" id="upbtnN" type="submit" 
+                  style="width: 45%;"
+                  >수정
+                </button>
+            <button
+              class="btn" id="upbtnN"
+              onclick="history.go(-1);return false;"
+              style="width: 45%;"
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                 >취소
                 </button>
             </div>
             <div class="mb-4">
+<<<<<<< HEAD
               <button class="btn" id="upbtn" style="text-align: center; background: rgb(239, 199, 120,1) !important;
               border: solid rgb(239, 199, 120,1) !important; margin: 5px;" onclick="deleteUserCheck()" 
+=======
+              <button class="btn" id="upbtnN" style="width: 90%;" onclick="deleteUserCheck()" 
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                 >회원탈퇴
                 </button>
           </div>
         </form>
+<<<<<<< HEAD
     
         <hr class="mb-4" />
       
       </form>
+=======
+        <hr class="mb-4" />
+     
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
       <c:choose>
           <c:when test="${!empty user.userProfile}">
             <form action="deleteProfile" method="POST">  
@@ -175,10 +195,17 @@ pageEncoding="UTF-8"%> <%@ include file="layout/header.jsp" %>
                       <input type="hidden" name="userId" value="${principal.user.userId}">
                     </div>  
                     <div class="entry input-group upload-input-group">  
+<<<<<<< HEAD
                       <button type="submit" class="btn btn-outline-danger">파일삭제</button>
                     </div>  
                   </div> 
                 </div> 
+=======
+                      <button type="submit" id="upbtnW" class="btn btn-outline-danger">파일삭제</button>
+                   	 </div>  
+                  	</div>  
+                  </div>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
             </form>
             </c:when>
           </c:choose>

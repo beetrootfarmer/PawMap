@@ -142,8 +142,12 @@ pageEncoding="UTF-8"%>
                   >커뮤니티</a
                 >
                 <ul class="dropdown-menu">
+<<<<<<< HEAD
                   <li><a href="shop.html">공지사항</a></li>
                   <li><a href="shop-detail.html">자유게시판</a></li>
+=======
+                  <li><a href="/pawmap/board/getFreeBoardList">자유게시판</a></li>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                   <li><a href="cart.html">나눔게시판</a></li>
                 </ul>
               </li>

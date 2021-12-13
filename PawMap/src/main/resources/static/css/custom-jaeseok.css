@@ -81,7 +81,11 @@ a:link {
 }
 .custom_margin {
   margin-top: 7rem !important;
+<<<<<<< HEAD
   margin-bottom: 25rem !important;
+=======
+  margin-bottom: 10rem !important;
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
   margin-right: 0;
   margin-left:0;
   text-align: center;
@@ -105,6 +109,10 @@ a:link {
   justify-content: space-evenly;
   margin-bottom: 15rem;
   box-sizing: unset !important;
+<<<<<<< HEAD
+=======
+  align-items: center;
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 }
 
 .custom_aboutUs_textBox {
@@ -140,7 +148,11 @@ a:link {
 
 .custom_btn {
   width: 9rem;
+<<<<<<< HEAD
     height: 5rem;
+=======
+    height: 3rem;
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
     color: white;
     background-color: #EFC778;
     border-style: none;
@@ -157,6 +169,7 @@ a:link {
   background-color: #EFC778;
   border-style: none;
   font-size: 18px;
+<<<<<<< HEAD
 }
 .custom_btn:hover{
   background-color: #e1a963;
@@ -171,7 +184,28 @@ a:link {
   font-size: 1.1rem;
   padding-left: 10%;
   padding-bottom: 0;
+=======
 }
+.custom_btn:hover{
+  background-color: #e1a963;
+}
+.custom_btn2:hover{
+  background-color: #e1a963;
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+}
+.custom_aboutUs_innerTextBox {
+  width: 100%;
+  padding-top: 0;
+  padding-right: 10;
+  font-size: 1.1rem;
+  padding-left: 10%;
+  padding-bottom: 0;
+}
+@media (max-width: 991.98px ),( min-width: 614px){
+  .custom_aboutUs_innerTextBox  {
+    font-size: 0.8rem;
+  }
+  }
 .custom_hr {
   width: 20%;
 }

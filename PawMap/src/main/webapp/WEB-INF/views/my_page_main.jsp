@@ -3,6 +3,7 @@ pageEncoding="UTF-8"%>
 
 <%@ include file="layout/header.jsp" %>
 
+<<<<<<< HEAD
     <!-- Start 마이페이지 타이틀 영역 -->
     <div class="pet-all-title-box" style="padding-top: 200px;">
         <div class="container">
@@ -12,6 +13,17 @@ pageEncoding="UTF-8"%>
                 </div>
             </div>
         </div>
+=======
+ <!--============================
+       나눔게시판 시작
+   ============================-->
+   <div style="margin-top: 7rem;">
+    <div class="">
+      <div class="col-lg-12 boardtitle">
+        <h2>마이페이지</h2>
+        <hr class="titleline" style="background-color: #EFC778; height: 3px; width: 80%;">
+      </div>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
     </div>
     <!-- End 마이페이지 타이틀 영역 -->
 

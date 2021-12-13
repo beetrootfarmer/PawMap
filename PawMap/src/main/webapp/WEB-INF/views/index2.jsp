@@ -97,20 +97,34 @@ pageEncoding="UTF-8"%>
       #slides-shop {
         height: 100vh;
       }
+<<<<<<< HEAD
     </style>
     <style>
+=======
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
       section {
           visibility: visible;
       }
       .progress-bar {
           background-color: rgb(247, 203, 58);
       }
+<<<<<<< HEAD
     /* <!-- 영상 style --> */
 		
 		.jb-video { position: relative; top: 1%;}
         video {width:100%}
 
   
+=======
+		
+	 .jb-video { 
+	 	position: relative; top: 1%;
+	 	}
+      video {
+	      width:100%;
+	      }
+
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
        /* index컬러 블럭만들기 */
        .about-box-main2 {
         background-color: #fdd572;
@@ -123,8 +137,19 @@ pageEncoding="UTF-8"%>
        .about-box-main {
          margin: 10%;
        }
+<<<<<<< HEAD
   
      
+=======
+        .cover-slides{
+        border-radius: 0;
+        border: 1px solid rgba(204, 156, 22, 0.8);
+    }
+    
+    .fa-search {
+    	cursor:pointer;
+    }
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 	  </style>
   </head>
 
@@ -154,7 +179,11 @@ pageEncoding="UTF-8"%>
                     <li class="nav-item">
                       <a href="/pawmap/search" id="nav-a" class="nav-link text-uppercase font-weight-bold">병원찾기</a></li>
                     <li class="nav-item">
+<<<<<<< HEAD
                       <a href="contact-us.html" id="nav-a" class="nav-link text-uppercase font-weight-bold">보호소 정보</a></li>
+=======
+                      <a href="/pawmap/shelter" id="nav-a" class="nav-link text-uppercase font-weight-bold">보호소 정보</a></li>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                     <li class="dropdown"color: rgb(255, 255, 255);">
                         <a
                           href="#"
@@ -163,7 +192,11 @@ pageEncoding="UTF-8"%>
                           >커뮤니티</a
                         >
                         <!-- style inline으로 -->
+<<<<<<< HEAD
                         <ul class="dropdown-menu"  style="background-color:rgba(0, 0, 0, 0.089);" >
+=======
+                        <ul class="dropdown-menu"  style="background-color:rgba(0, 0, 0, 0.089);     border-color: transparent;" >
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                           <li style="padding: 3%;"><a href="/pawmap/board/getFreeBoardList"  style="color: #fff; size: 0.8em;">자유게시판</a></li>
                           <li style="padding: 3%;"><a href="/pawmap/board/getNanumBoardList"  style="color: #fff; size: 0.8em;">나눔게시판</a></li>
                         </ul>
@@ -242,7 +275,11 @@ pageEncoding="UTF-8"%>
                   <br />
                   여러분의 근처에 착한 병원을 찾아보세요.
                 </p>
+<<<<<<< HEAD
                 <p><a class="btn custom_btn2" href="#">자세히 보기</a></p>
+=======
+                <p><a class="btn custom_btn2" href="/pawmap/search">자세히 보기</a></p>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
               </div>
             </div>
           </div>
@@ -264,7 +301,11 @@ pageEncoding="UTF-8"%>
                   <br />
                   
                 </p> -->
+<<<<<<< HEAD
                 <p><a class="btn custom_btn2" href="#">자세히 보기</a></p>
+=======
+                <p><a class="btn custom_btn2" href="/pawmap/board/getFreeBoardList">자세히 보기</a></p>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
               </div>
             </div>
           </div>
@@ -305,7 +346,11 @@ pageEncoding="UTF-8"%>
     <!-- 검색 부분-->
     <div class=" custom_margin">
       <form action="/pawmap/searchDetail" method="get">
+<<<<<<< HEAD
 	      <div id="search_bar" class="d-flex justify-content-center">
+=======
+	      <div id="search_bar" class="d-flex justify-content-center" style="height: 25vh;">
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 	        <div class="search">
 	          <h3 id="search_hostpital" class=" text-uppercase font-weight-bold">
 	            우리 동네 동물병원을 찾아보세요!
@@ -385,6 +430,7 @@ pageEncoding="UTF-8"%>
  
     <!--제휴 병원 소개 부분 끝-->
 
+<<<<<<< HEAD
 
     <!--병원소개페이지 추가 -->
   <div class="about-box-main2">
@@ -603,6 +649,182 @@ pageEncoding="UTF-8"%>
   
                 </a>
               </div>
+=======
+
+    <!--병원소개페이지 추가 -->
+  <div class="about-box-main2">
+    <div class="about-box-main">
+      <div class="container">
+          <div class="row">
+      <div class="col-lg-6 jb-video">
+                  <video muted autoplay loop>
+                      <source src="${pageContext.request.contextPath}/videos/Cat - 85464.mp4" type="video/mp4">
+                      <strong>Your browser does not support the video tag.</strong>
+                    </video>
+              </div>
+              <div class="col-lg-6 long-text">
+                  <h2 class="noo-sh-title-top"><span>PAWMAP</span></h2>
+                  <p>포맵은 반려인들이 모여서 만든 동물병원 연결 서비스입니다. 이용하는 방법을 소개해드릴게요. 우선 회원가입 후 포맵의 전문 수의사에게 아이의 증상을 상담받을 수 있습니다. 
+                      그리고 우리동네 병원찾기를 통해 어디에 있든 주변 병원을 찾고 이용자들의 후기를 확인하세요. 
+                      병원을 찾았다면 동물병원의 수의사 정보와 함께 어떤 동물,치료를 전문으로 하는지 확인할 수 있습니다. 그리고 맘에 든다면 영화예약하듯 예약할 수 있습니다. 
+                      병원에 다녀오고 포맵에 들어오시면 병원에서 업로드한 진단서를 확인하실 수 있습니다.
+                      정기검진을 받으면 기록해야할 내용이 많은데 포맵에서 데이터를 관리해보세요.
+                      같이 산책할 동네 강아지를 찾거나, 작아진 옷을 팔 때는 포맵 커뮤니티를 이용해보세요.
+                      마지막으로 포맵에서 소개하는 유기동물 보호소 페이지에서는 후원을 할 수 있습니다.
+                       </p>
+                  <button class="btn btn-primary btn-sm custom_btn" type="button" onclick="location.href='/pawmap/about'">
+                        더보기
+                  </button>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a class="btn hvr-hover" href="#">Read More</a> -->
+              </div>
+          </div>
+          <div class="row my-5">
+              <div class="col-sm-6 col-lg-4">
+                  <div class="service-block-inner">
+                      <h3>우리동네 동물병원 찾기</h3>
+                      <p class="long-text">검색한 위치를 기반으로 주변 동물병원을 찾아드립니다. 병원에 대한 상세한 정보와 사람들의 후기를 확인해보세요!</p>
+                  </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                  <div class="service-block-inner">
+                      <h3>병원예약과 진료기록관리</h3>
+                      <p class="long-text">포맵의 제휴병원은 검색 후 바로 예약을 할 수 있습니다. 포맵에서 병원을 예약하고 병원 기록과 진단서관리를 시작하세요! </p>
+                  </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                  <div class="service-block-inner">
+                      <h3>반려인들을 위한 커뮤니티</h3>
+                      <p class="long-text">반려동물 키우는 이야기를 나눌 수 있는 자유게시판과 반려동물 관련 중고물건 나눔장터가 열려있습니다! </p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- 그래프 & 통계자료 첨부  -->
+                      <!-- ======= Facts Section ======= -->
+              <section class="facts section-bg" data-aos="fade-up">
+                  <div class="container">
+          
+                  <div class="row counters">
+          
+                      <div class="col-lg-3 col-6 text-center">
+                      <span data-purecounter-start="0" data-purecounter-end="332" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>회원</p>
+                      </div>
+          
+                      <div class="col-lg-3 col-6 text-center">
+                      <span data-purecounter-start="0" data-purecounter-end="1483" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>제휴병원</p>
+                      </div>
+          
+                      <div class="col-lg-3 col-6 text-center">
+                      <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>오늘 예약</p>
+                      </div>
+          
+                      <div class="col-lg-3 col-6 text-center">
+                      <span data-purecounter-start="0" data-purecounter-end="77" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>반려동물 프로필</p>
+                      </div>
+          
+                  </div>
+          
+                  </div>
+              </section><!-- End Facts Section -->
+          
+              <!-- ======= Our Skills Section ======= -->
+              <section class="skills" data-aos="fade-up">
+                  <div class="container">
+          
+                  <div class="section-title">
+                      <h2>stack on PAWMAP</h2>
+                      <p></p>
+                  </div>
+          
+                  <div class="skills-content">
+          
+                      <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <span class="skill">SpringBoot<i class="val">100%</i></span>
+                      </div>
+                      </div>
+                      <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                          <span class="skill">Java <i class="val">80%</i></span>
+                      </div>
+                      </div>
+                      <div class="progress">
+                      <div class="progress-bar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                          <span class="skill"> JavaScript<i class="val">35%</i></span>
+                      </div>
+                      </div>
+          
+                      <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="skill">Html <i class="val">20%</i></span>
+                      </div>
+                      </div>
+          
+                  </div>
+          
+                  </div>
+              </section>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
+            </div>
+          </div>
+        </c:forEach>
+  
+        </div>
+<<<<<<< HEAD
+      </div>
+
+=======
+
+  <!--병원소개 페이지 끝 -->
+
+
+    <hr class="custom_hr" />
+
+    <!-- Start Instagram Feed  -->
+
+    
+    
+    <!-- 보호소 정보 표출부분 (css 맞는지 확인요) -->
+    
+    <div class="instagram-box" style=" overflow:hidden;
+      margin:0 auto;">
+      <h3>유기동물 보호소를 소개합니다</h3>
+      <br /><br><br>
+        <div class="main-instagram owl-carousel owl-theme">
+            <c:forEach items="${shelterPic}" var="shelterPic" varStatus="i">
+            <div class="item">
+              <div class="ins-inner-box" 
+              style="    
+              width:300px;
+              height:375px;
+              overflow:hidden;
+              margin:0 auto;">
+                <!-- <img src="images/abandoned2.jpg" alt="" /> -->
+                <img class="img-fluid" src="${pageContext.request.contextPath}/upload/${shelterPic.originalFileName}" 
+                alt=""
+
+                style="    
+                width:100%;
+                height:100%;
+                object-fit:cover" />
+              <div class="hov-in">
+                  <a href="/pawmap/shelter_detail?shelterSeq=${shelterPic.shelterSeq}">
+                  <h1 style="color: #ffffff"><strong>
+                    ${shelterPic.shelterName }
+                  </strong></h1>
+                  <h4 style="color: #ffffff">
+                    ${shelterPic.shelterAddress }
+                    <br>
+                    ${shelterPic.shelterTel } 
+                  </h4>
+                </a>
+
+              </div>
             </div>
           </div>
         </c:forEach>
@@ -610,6 +832,7 @@ pageEncoding="UTF-8"%>
         </div>
       </div>
 
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
   </div>
 
 

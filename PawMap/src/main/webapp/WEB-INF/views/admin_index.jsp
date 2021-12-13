@@ -6,6 +6,7 @@ pageEncoding="UTF-8"%>
   <!--adminmainpage-->
   <div class="my-account-box-main" style="margin-top:149px;">
     <div class="container">
+<<<<<<< HEAD
       <div class="row row-adminindex">
             <div class="col-lg-4 col-md-12">
                 <div class="account-box">
@@ -17,6 +18,44 @@ pageEncoding="UTF-8"%>
                             <h4>제휴병원 관리</h4>
                             <p>제휴된 동물 병원 정보 관리 및 수정</p>
                         </div>
+=======
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+            <div class="account-box">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <a href="/pawmap/getHospitalList"> <i class="far fa-hospital"></i> </a>
+                    </div>
+                    <div class="service-desc">
+                        <h4>제휴병원 관리</h4>
+                        <p>제휴된 동물 병원 정보 관리 및 수정</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="account-box">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <a href="/pawmap/getUserList"><i class="fas fa-user-cog"></i> </a>
+                    </div>
+                    <div class="service-desc">
+                        <h4>회원정보 관리</h4>
+                        <p>회원정보 관리 및 수정</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="account-box">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <a href="admin/shelterList"> <i class="fas fa-building"></i> </a>
+                    </div>
+                    <div class="service-desc">
+                        <h4>보호소정보 관리</h4>
+                        <p>동불 보호소 정보 관리 및 수정</p>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
                     </div>
                 </div>
             </div>

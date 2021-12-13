@@ -112,6 +112,7 @@ public class SearchController {
 		
 		model.addAttribute("hospitalReviewList",hospitalReviewList);
 		model.addAttribute("reviewSize",hospitalReviewList.size());
+<<<<<<< HEAD
 
 		VetVO vet = new VetVO();
 		vet.setHospitalSeq(vo.getHospitalSeq());
@@ -120,6 +121,17 @@ public class SearchController {
 		
 		List<VetVO> vetList = vetService.getVetListWithFiles(vet);
 		System.out.println("특정 hospital 정보 출력 : " +hospital);
+=======
+		
+		System.out.println("hospitalReviewList :"+hospitalReviewList);
+
+		VetVO vet = new VetVO();
+		vet.setHospitalSeq(vo.getHospitalSeq());
+		vet.setUserId(hospital.getHospitalId());
+		
+		
+		List<VetVO> vetList = vetService.getVetListWithFiles(vet);
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 		System.out.println("vetList --> "+vetList);
 
 		model.addAttribute("hospital", hospital);

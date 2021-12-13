@@ -42,6 +42,17 @@ pageEncoding="UTF-8"%>
     <!-- End All Title Box -->
 
     <!-- Start About Page  -->
+<<<<<<< HEAD
+=======
+    <div style="margin-top: 7rem;">
+        <div class="">
+          <div class="col-lg-12 boardtitle">
+            <h2>PAWMAP 소개</h2>
+            <hr class="titleline" style="background-color: #EFC778; height: 3px; width: 80%;">
+          </div>
+        </div>
+
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
     <div class="about-box-main">
         <div class="container" style="margin-top: 5rem;">
             <div class="row">

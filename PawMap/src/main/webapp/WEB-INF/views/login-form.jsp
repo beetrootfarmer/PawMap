@@ -44,7 +44,11 @@ pageEncoding="UTF-8"%>
     /* 배경영상 설정 */
 		.jb-box { width: auto; height: 100%; z-index:0; overflow: hidden;margin: 0px auto; position: relative; }
 		video { width: 100%; }
+<<<<<<< HEAD
 		.jb-text { position: absolute; top: 1%; width: 100%; z-index: 1; background-color: rgba(58, 58, 58, 0.26); background-size: 130%;}
+=======
+		.jb-text { position: absolute; top: 1%; width: 100%; height: 100%; z-index: 1; background-color: rgba(58, 58, 58, 0.26); background-size: 130%;}
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 	  
 	 /* 헤더 스타일 */
 	 header,
@@ -100,6 +104,7 @@ pageEncoding="UTF-8"%>
 				  </li>
 				  <li class="side-menu">
 					<a href="/pawmap/joinForm">
+<<<<<<< HEAD
 					  <p id="attr-nav-p">회원가입</p>
 					</a>
 				  </li>
@@ -123,6 +128,13 @@ pageEncoding="UTF-8"%>
 					</a>
 				  </li>
 				</sec:authorize>
+=======
+					  <p id="" class="nav-p-login" style="margin-right: 10px;">회원가입</p>
+					</a>
+				  </li>
+				</sec:authorize>
+			
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 			  </ul>
 			</div>
 		   
@@ -158,7 +170,11 @@ pageEncoding="UTF-8"%>
                   onsubmit="submitLoginForm(this);return false;"
 				  >
 		      		<div class="form-group login-input" >
+<<<<<<< HEAD
 		      			<input type="text" class="form-control" name="userId" placeholder="userId" required>
+=======
+		      			<input type="text" class="form-control" name="userId" placeholder="Id" required>
+>>>>>>> 93f2fc2de3aa02e4668ed04feb7172fc9a1329e7
 		      		</div>
 	            <div class="form-group login-input" ">
 	              <input  id="password-field" type="password" class="form-control"  name="userPassword" placeholder="Password" required>
