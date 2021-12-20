@@ -59,6 +59,6 @@ PawMap은 주변 동물병원 검색, 예약, 상담, 진단서 관리까지 통
 <a href="https://github.com/JAESKAAA/PawMap/projects/1"> PawMap Project </a>
 <br/>
 
-## ⭐️ 리팩토링 기록
+## ⭐️리팩토링 기록
 + 혼재되어 있던 view 파일들을 카테고리별로 폴더화 하는 작업 진행 (PawMap v1.0 _ 2021.12.18)
 <br/>
